@@ -1,0 +1,11 @@
+/* CSS for JavaScript index.html */
+
+
+h1, p, footer, .navbar-brand {
+    font-family: 'Oxanium', cursive;
+}
+
+th.table-head {
+    font-family: 'Share Tech Mono', monospace;
+    color: #f4b132;
+}
