@@ -14,5 +14,15 @@ h1, p, footer, .navbar-brand {
 
 th.table-head {
     font-family: 'Share Tech Mono', monospace;
-    color: #f4b132;
+	color: #f4b132;
+	font-size: 110%;
+	}
+
+.footer {
+	text-align: center;
+	}
+
+table, th {
+		border: 1.5px solid #696969;
+		border-collapse: collapse;
 	}
