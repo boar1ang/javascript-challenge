@@ -20,9 +20,18 @@ th.table-head {
 
 .footer {
 	text-align: center;
+	color: #f4b132;
+	font-size: 114%;
+	padding-bottom: 1rem;
 	}
 
 table, th {
 		border: 1.5px solid #696969;
 		border-collapse: collapse;
+		text-transform: uppercase;
 	}
+label {
+	color: #f4b132;
+}
+
+
