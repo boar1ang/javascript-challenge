@@ -1,6 +1,6 @@
 //javascript-challenge homework
 
-// from data.js > log the array of dictionary 111 objects
+// from data.js > log the array of 111 dictionary objects
 var tableData = data;
 console.log(tableData);
 
@@ -8,7 +8,7 @@ console.log(tableData);
 var table = d3.select("#ufo-table");
 var tbody = d3.select("tbody");
 
-// Function to add the table data ----------------------
+// Function to add the table data to web page----------------------
 function populateTable(tableData) {
     tbody.innerHTML = ("");
     tableData.forEach((datum) => {
@@ -21,18 +21,22 @@ function populateTable(tableData) {
     });
 });
 }
+
+//call function
 populateTable(tableData);
 
-// Reference the filter button --------------------
+// Reference the filter button & input options -------------
 var filterButton = d3.select("#filter-btn");
 var inputElement0 = d3.select("#datetime"); 
 var inputElement1 = d3.select("#city");
 var inputElement2 = d3.select("#state");
+var inputElement3 = d3.select("#shape");
 // -------------------------------------------------
 
 filterButton.on("click", function() 
 {
     d3.event.preventDefault();
+    
     //clear content in table body
     tbody.html("");    
     
@@ -42,8 +46,10 @@ filterButton.on("click", function()
         console.log(`City value entered was ${inputValue1}`);
     var inputValue2 = inputElement2.property("value");
         console.log(`State value entered was ${inputValue2}`);
+    var inputValue3=(inputElement3.property("value"));
+        console.log(`Shape value selected was ${inputValue3}`)
    
-    var filteredResults = tableData.filter(datum => datum.datetime === inputValue0 || datum.city === inputValue1 || datum.state === inputValue2);
+    var filteredResults = tableData.filter(datum => datum.datetime === inputValue0 || datum.city === inputValue1 || datum.state === inputValue2 || datum.shape === inputValue3);
         console.log(filteredResults);
         filteredResults.forEach((datum) => {
             var row = tbody.append("tr");

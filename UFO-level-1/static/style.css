@@ -32,6 +32,13 @@ table, th {
 	}
 label {
 	color: #f4b132;
-}
+	}
 
-
+#filter-btn, #reset-btn 	
+	{
+	color: #3cd0c9;
+	border: solid darkgray 1px;
+	border-radius: 3.5px;
+	padding-bottom: 8px;
+	margin-bottom: 5px;
+	}
