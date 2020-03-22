@@ -47,7 +47,7 @@ filterButton.on("click", function()
     var inputValue2 = inputElement2.property("value");
         console.log(`State value entered was ${inputValue2}`);
     var inputValue3=(inputElement3.property("value"));
-        console.log(`Shape value selected was ${inputValue3}`)
+        console.log(`Shape value selected was ${inputValue3}`);
    
     var filteredResults = tableData.filter(datum => datum.datetime === inputValue0 || datum.city === inputValue1 || datum.state === inputValue2 || datum.shape === inputValue3);
         console.log(filteredResults);
